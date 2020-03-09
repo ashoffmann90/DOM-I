@@ -60,7 +60,7 @@ navColor.forEach(element => {
 const appItem = document.createElement('a')
 appItem.textContent = 'APPENDERATOR'
 const secondaryAppItem = document.querySelector('nav')
-secondaryAppItem.append(appItem)
+secondaryAppItem.appendChild(appItem)
 
 const prepItem = document.createElement('a')
 prepItem.textContent = 'PREPENDERATOR'
