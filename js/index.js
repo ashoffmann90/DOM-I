@@ -65,7 +65,42 @@ ctaH1.textContent = 'DOM Is Awesome'
 const ctaButton = document.querySelector('.cta-text button')
 ctaButton.textContent = 'Get Started'
 
-
 // ctaImg add src
 const ctaImg = document.getElementById('cta-img')
 ctaImg.setAttribute('src', 'img/header-img.png')
+
+
+// Top Features
+const featuresContent = document.querySelector('.text-content h4')
+featuresContent.textContent = 'Features'
+const featuresContentP = document.querySelector('.text-content p')
+featuresContentP.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+// Top About
+const about = document.querySelector('.text-content:nth-of-type(2) h4')
+about.textContent = 'About'
+const aboutP = document.querySelector('.text-content:nth-of-type(2) p')
+aboutP.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+// Img Code Snippet
+const middleImgSrc = document.querySelector('#middle-img')
+middleImgSrc.src = 'img/mid-page-accent.jpg'
+
+// Bottom Services
+const servicesH4 = document.querySelector('.bottom-content .text-content h4')
+servicesH4.textContent = 'Services'
+
+const servicesP = document.querySelector('.bottom-content .text-content p')
+servicesP.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+// Bottom Product
+const productH4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+productH4.textContent = 'Product'
+const productP = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+productP.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+// Bottom Vision
+const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+visionH4.textContent = 'Vision'
+const visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+visionP.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
