@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
 // Nav Anchors
 const navLinks = document.getElementsByTagName('a')
 navLinks[0].textContent = 'Services'
@@ -50,12 +51,21 @@ navLinks[3].textContent = 'Features'
 navLinks[4].textContent = 'About'
 navLinks[5].textContent = 'Contact'
 
-// cta flex box styling
-const ctaBox = document.querySelector('.cta-text')
-ctaBox.style.display = 'flex'
-ctaBox.style.flexDirection = 'column'
-ctaBox.style.alignItems = 'center'
-ctaBox.style.textAlign = 'center'
+const navColor = document.querySelectorAll('a')
+navColor.forEach(element => {
+  element.style.color = 'green'
+})
+
+// .append and .prepend
+const appItem = document.createElement('a')
+appItem.textContent = 'APPENDERATOR'
+const secondaryAppItem = document.querySelector('nav')
+secondaryAppItem.append(appItem)
+
+const prepItem = document.createElement('a')
+prepItem.textContent = 'PREPENDERATOR'
+const secondaryPrepItem = document.querySelector('nav')
+secondaryPrepItem.prepend(prepItem)
 
 // cta h1
 const ctaH1 = document.querySelector('.cta-text h1')
@@ -104,3 +114,15 @@ const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-ty
 visionH4.textContent = 'Vision'
 const visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
 visionP.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const contactH4 = document.querySelector('.contact h4')
+contactH4.textContent = 'Contact'
+const contactP = document.querySelector('.contact p')
+contactP.textContent = '123 Way 456 Street Somewhere, USA'
+const contactPhone = document.querySelector('.contact p:nth-of-type(2)')
+contactPhone.textContent = '1 (888) 888-8888'
+const contactEmail = document.querySelector('.contact p:nth-of-type(3)')
+contactEmail.textContent = 'sales@greatidea.io'
+
+const footer = document.querySelector('footer p')
+footer.textContent = 'Copyright Great Idea! 2018'
