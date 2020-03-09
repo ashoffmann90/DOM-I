@@ -70,6 +70,7 @@ secondaryPrepItem.prepend(prepItem)
 // cta h1
 const ctaH1 = document.querySelector('.cta-text h1')
 ctaH1.textContent = 'DOM Is Awesome'
+document.querySelector('.cta-text h1').innerHTML = siteContent.cta.h1.split(' ').join('<br> ')
 
 // cta button
 const ctaButton = document.querySelector('.cta-text button')
@@ -115,10 +116,16 @@ visionH4.textContent = 'Vision'
 const visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
 visionP.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+// Contact
 const contactH4 = document.querySelector('.contact h4')
 contactH4.textContent = 'Contact'
 const contactP = document.querySelector('.contact p')
 contactP.textContent = '123 Way 456 Street Somewhere, USA'
+let stAddress = siteContent.contact.address.split(" ");;
+document.querySelector('.contact p:nth-of-type(1)').innerHTML = stAddress[0]+" "+stAddress[1]+" "+stAddress[2]+ " "+stAddress[3]+ "<br>" + stAddress[4] + stAddress[5] ;
+
+
+
 const contactPhone = document.querySelector('.contact p:nth-of-type(2)')
 contactPhone.textContent = '1 (888) 888-8888'
 const contactEmail = document.querySelector('.contact p:nth-of-type(3)')
@@ -126,3 +133,15 @@ contactEmail.textContent = 'sales@greatidea.io'
 
 const footer = document.querySelector('footer p')
 footer.textContent = 'Copyright Great Idea! 2018'
+
+
+// STRETCH
+document.querySelector('button').onmouseover = function() {mouseOver()}
+function mouseOver() {
+  document.querySelector('button').style.color = 'orange'
+}
+
+document.querySelector('button').onmouseout = function() {mouseOut()}
+function mouseOut() {
+  document.querySelector('button').style.color = 'black'
+}
